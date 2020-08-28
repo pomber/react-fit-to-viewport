@@ -2,7 +2,7 @@ import React from 'react';
 import { FitToViewport } from '.';
 
 export default {
-  title: 'Welcome',
+  title: 'Basic',
 };
 
 export const Default = () => (

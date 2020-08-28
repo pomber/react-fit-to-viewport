@@ -35,6 +35,7 @@
   },
   "name": "react-fit-to-viewport",
   "author": "Rodrigo Pombo",
+  "repository": "pomber/react-fit-to-viewport",
   "module": "dist/react-fit-to-viewport.esm.js",
   "devDependencies": {
     "@babel/core": "^7.11.4",

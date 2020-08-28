@@ -17,19 +17,7 @@ const App = () => {
         maxZoom={maxZoom}
         style={{ overflow: 'hidden' }}
       >
-        <div
-          style={{
-            background: 'white',
-            border: '3px solid #2ea7f8',
-            height: '100%',
-            boxSizing: 'border-box',
-            padding: 5,
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            fontSize: '1.5em',
-          }}
-        >
+        <div className="box">
           <pre>{`<FitToViewport
   width={${width}}
   height={${height}}
@@ -51,8 +39,8 @@ const App = () => {
             value={width}
             onChange={e => setWidth(+e.currentTarget.value)}
           />
+          <span>{width}</span>
         </label>
-        <br />
         <label>
           Height:
           <input
@@ -63,8 +51,8 @@ const App = () => {
             value={height}
             onChange={e => setHeight(+e.currentTarget.value)}
           />
+          <span>{height}</span>
         </label>
-        <br />
         <label>
           Min Zoom:
           <input
@@ -76,8 +64,8 @@ const App = () => {
             value={minZoom}
             onChange={e => setMinZoom(+e.currentTarget.value)}
           />
+          <span>{minZoom.toFixed(2)}</span>
         </label>
-        <br />
         <label>
           Max Zoom:
           <input
@@ -89,6 +77,7 @@ const App = () => {
             value={maxZoom}
             onChange={e => setMaxZoom(+e.currentTarget.value)}
           />
+          <span>{maxZoom.toFixed(2)}</span>
         </label>
       </div>
     </>
