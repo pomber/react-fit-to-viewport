@@ -89,7 +89,7 @@ function GenerateScaleVar({
 }) {
   const js = `
 (function() {
-  ${setScaleProp.toString()}
+  var setScaleProp = ${setScaleProp.toString()}
   setScaleProp(
     ${width},
     ${height},
