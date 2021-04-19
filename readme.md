@@ -10,7 +10,7 @@
 Automatically scales the content to fit it inside the viewport. It also works with server-side rendering.
 
 ```bash
-$ yarn install react-fit-to-viewport
+$ yarn add react-fit-to-viewport
 ```
 
 ```jsx
